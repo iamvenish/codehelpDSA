@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+using namespace std ;
+int getSum(int *arr , int n){
+    int sum=0;
+    for(int i=0 ; i<n ; i++){
+         sum+=arr[i];
+    }
+    return sum;
+}
+int main()
+{
+    int n;
+    cin >> n ;
+     
+     // variable create kari sake 
+    int *arr = new int[n];
+
+    for(int i=0 ; i< n ; i++){
+        cin >> arr[i];
+    }
+    
+    cout << " sum of the array is " << endl;
+     cout << getSum(arr , n);
+    cout << endl;
+
+    
+    return 0;
+}
